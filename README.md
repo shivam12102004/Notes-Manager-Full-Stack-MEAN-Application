@@ -142,7 +142,7 @@ Port Conflicts: Change ports in environment files if needed
 
 text
 
-## 2-Minute Interview Pitch
+
 
 "This Notes Manager demonstrates my full-stack MEAN stack expertise. It's a production-ready CRUD application where I implemented a RESTful API with Express.js, MongoDB database with Mongoose ODM, and a responsive Angular frontend with TypeScript.
 
@@ -150,7 +150,7 @@ Key highlights include proper error handling, input validation, CORS configurati
 
 This project shows I can build complete applications from database design to UI implementation while following best practices for security, performance, and maintainability."
 
-## Interview Q&A (8-10 Questions)
+
 
 **1. Why did you choose the MEAN stack for this project?**
 *The MEAN stack provides a full JavaScript solution with great ecosystem support. MongoDB's flexible schema works well for notes, Express offers minimal overhead, Angular provides structure for complex UIs, and Node.js enables high-performance I/O operations.*
@@ -182,7 +182,7 @@ This project shows I can build complete applications from database design to UI 
 **10. How do Reactive Forms differ from Template-Driven Forms?**
 *Reactive Forms are more explicit, testable, and scalable. They provide better control over validation logic and complex form scenarios compared to Template-Driven Forms.*
 
-## Sample cURL Commands
+###  Sample cURL Commands
 
 ```bash
 # Create a note
