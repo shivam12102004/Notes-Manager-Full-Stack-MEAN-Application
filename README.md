@@ -28,12 +28,12 @@ A full-stack Notes Manager application built with the MEAN stack (MongoDB, Expre
 - Reactive Forms - Form handling
 
 ## Project Structure
-notes-manager/
+~~~notes-manager/
 ├── backend/ # Node.js/Express API
 ├── frontend/ # Angular application
 └── README.md
+~~~
 
-text
 
 ## Quick Start
 
@@ -46,23 +46,26 @@ text
 ### Installation
 
 1. Clone and setup backend:
-bash
+~~~bash
 cd backend
 npm install
 cp .env.example .env
 # Edit .env with your MongoDB connection string
+~~~
 Setup frontend:
 
-bash
+~~~bash
 cd frontend
 npm install
 Database Setup
 Option 1: Local MongoDB
+~~~
 
-bash
+~~~bash
 # Install MongoDB locally or use Docker
 mongod --dbpath /path/to/your/db
 Option 2: MongoDB Atlas (Cloud)
+~~~
 
 Create account at https://www.mongodb.com/cloud/atlas
 
@@ -75,15 +78,16 @@ Start MongoDB (if using local instance)
 
 Start Backend:
 
-bash
+~~~bash
 cd backend
 npm run dev  # Development mode with nodemon
 
 # or
 npm start    # Production mode
 Start Frontend (in new terminal):
+~~~
 
-bash
+~~~bash
 cd frontend
 ng serve
 Open browser: http://localhost:4200
@@ -95,19 +99,20 @@ GET	/api/notes	Get all notes
 GET	/api/notes/:id	Get single note
 PUT	/api/notes/:id	Update note
 DELETE	/api/notes/:id	Delete note
+~~~
 Sample API Usage
 Create Note
-bash
+~~~bash
 curl -X POST http://localhost:3000/api/notes \
   -H "Content-Type: application/json" \
   -d '{"title":"My Note","content":"This is my first note"}'
-  
+  ~~~
 Get All Notes
-bash
+~~~bash
 curl http://localhost:3000/api/notes
 Environment Variables
 Create .env file in backend directory:
-
+~~~
 env
 PORT=3000
 MONGO_URI=mongodb://localhost:27017/notesdb
@@ -146,10 +151,10 @@ text
 
 ## Sample cURL Commands
 
-bash
+~~~bash
 # Create a note
 curl -X POST http://localhost:3000/api/notes \
   -H "Content-Type: application/json" \
   -d '{"title":"Meeting Notes","content":"Discuss project requirements"}'
-
+~~~
 # Response: {"success":true,"data":{"_id":"...","title":"Meeting Notes","content":"Discuss project requirements","createdAt":"
