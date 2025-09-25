@@ -1,0 +1,17 @@
+<div class="note-list">
+  <h2>My Notes</h2>
+  
+  <div *ngIf="loading" class="loading">Loading notes...</div>
+
+  <div *ngIf="!loading && notes.length === 0" class="no-notes">
+    No notes found. <a routerLink="/create">Create your first note!</a>
+  </div>
+
+  <div class="notes-container">
+    <div *ngFor="let note of notes" class="note-card">
+      <h3>{{ note.title }}</h3>
+      <p>{{ note.content || 'No content' }}</p>
+      <small>Created: {{ note.createdAt | date:'short' }}</small>
+    </div>
+  </div>
+</div>

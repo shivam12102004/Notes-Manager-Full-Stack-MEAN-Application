@@ -1,0 +1,38 @@
+.note-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.loading, .no-notes {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.notes-container {
+  display: grid;
+  gap: 20px;
+}
+
+.note-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.note-card h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.note-card p {
+  margin: 0 0 10px 0;
+  color: #666;
+}
+
+.note-card small {
+  color: #999;
+}
